@@ -8,8 +8,14 @@ variable "name" {
   default     = "World"
 }
 
+variable "age" {
+  description = "Age"
+  type = number
+  default = 18
+}
+
 locals {
-  greeting = "Hello, ${var.name}!"
+  greeting = "Hello, ${var.name}! My age is ${var.age}"
 }
 
 output "hello_world" {
