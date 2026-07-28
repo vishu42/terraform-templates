@@ -16,6 +16,7 @@ variable "age" {
 
 variable "TEST" {
   type = string
+  default = "value"
 }
 locals {
   greeting = "Hello, ${var.name}! My age is ${var.age}"
