@@ -14,6 +14,9 @@ variable "age" {
   default = 18
 }
 
+variable "TEST" {
+  type = string
+}
 locals {
   greeting = "Hello, ${var.name}! My age is ${var.age}"
 }
@@ -21,4 +24,8 @@ locals {
 output "hello_world" {
   description = "A friendly Terraform greeting."
   value       = local.greeting
+}
+
+output "TEST" {
+  value = var.TEST
 }
