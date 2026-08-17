@@ -8,6 +8,10 @@ variable "bucket_name" {
   default     = "my-app-bucket"
 }
 
+variable "test" {
+type = string
+}
+
 variable "environment" {
   description = "Deployment environment."
   type        = string
