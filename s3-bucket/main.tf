@@ -12,6 +12,11 @@ variable "test" {
 type = string
 }
 
+variable "test-another" {
+type = string
+}
+
+
 variable "environment" {
   description = "Deployment environment."
   type        = string
