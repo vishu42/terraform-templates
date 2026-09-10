@@ -7,7 +7,11 @@ variable "vpc_name" {
   type        = string
   default     = "main-vpc"
 }
-
+variable "vpc_name_another" {
+  description = "Name of the VPC."
+  type        = string
+  default     = "main-vpc-2"
+}
 variable "cidr_block" {
   description = "CIDR block for the VPC."
   type        = string
